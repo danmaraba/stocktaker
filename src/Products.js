@@ -1,4 +1,5 @@
 import React from 'react';
+import NewInventoryForm from './NewInventoryForm';
 
 
 function Products() {
