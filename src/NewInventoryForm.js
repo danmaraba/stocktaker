@@ -1,8 +1,12 @@
 import React from 'react'
 
+
 function NewInventoryForm() {
   return (
+    
     <form className='new-inventory-form'>
+      <h1>My Stocks</h1>
+      <h2>Category Filters</h2>
       <label className='name'>
         <input type="text" placeholder='Name' name="text"/>
       </label>
@@ -20,5 +24,6 @@ function NewInventoryForm() {
     </form>
    )
 }
+
 
 export default NewInventoryForm

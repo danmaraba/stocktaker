@@ -58,3 +58,9 @@ body{
 .name{
   margin: 3%;
 }
+
+.name-inventory{
+  margin-left: 20%;
+  background-color: red;
+}
+
