@@ -4,7 +4,7 @@ import NewInventoryForm from './NewInventoryForm';
 
 function Products() {
   return (
-    <div>Products</div>
+    // <NewInventoryForm/>
   )
 }
 

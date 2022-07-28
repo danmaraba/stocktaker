@@ -2,8 +2,21 @@ import React from 'react'
 
 function NewInventoryForm() {
   return (
-    <div>NewInventoryForm</div>
-  )
+    <form className='new-inventory-form'>
+      <label>
+        Details
+        <input type="text" name="text"/>
+      </label>
+      <label>
+        Category
+        <select className='category'>
+
+        </select>
+      </label>
+      <input type="submit" value="Add Inventory"/>
+
+    </form>
+   )
 }
 
 export default NewInventoryForm

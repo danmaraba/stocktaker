@@ -7,7 +7,13 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
 function App() {
-  const[]=useState()
+  const[inventories, setInventories]=useState([]);
+
+  useEffect (()=>{
+    fetch ('https://nameless-retreat-54870.herokuapp.com/inventories')
+    .then(res => res.json)
+    .then(data => setInventories(data))
+  }, []);
   
   return (
     <>
