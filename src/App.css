@@ -33,10 +33,10 @@ body{
   margin-top: 6px;
 }
 
-/* .nav li.active{
+.nav li.active{
   background-color: blue;
 }
 
 .nav li:hover{
   background-color: red;
-} */
+}
