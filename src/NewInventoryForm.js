@@ -3,9 +3,11 @@ import React from 'react'
 function NewInventoryForm() {
   return (
     <form className='new-inventory-form'>
+      <label className='name'>
+        <input type="text" placeholder='Name' name="text"/>
+      </label>
       <label>
-        Details
-        <input type="text" name="text"/>
+        <input type="text" placeholder='Price'/>
       </label>
       <label>
         Category

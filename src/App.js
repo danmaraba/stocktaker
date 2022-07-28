@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import About from './About';
 import Home from './Home';
 import Products from './Products';
@@ -7,13 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
 function App() {
-  const[inventories, setInventories]=useState([]);
-
-  useEffect (()=>{
-    fetch ('https://nameless-retreat-54870.herokuapp.com/inventories')
-    .then(res => res.json)
-    .then(data => setInventories(data))
-  }, []);
+  
   
   return (
     <>
@@ -24,7 +18,6 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/products" element={<Products/>}/>
       </Routes>
-     
     </div>
 
     </>
