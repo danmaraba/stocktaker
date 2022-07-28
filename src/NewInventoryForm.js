@@ -13,7 +13,7 @@ function NewInventoryForm() {
 
         </select>
       </label>
-      <input type="submit" value="Add Inventory"/>
+      <input className='add-inventory' type="submit" value="Add Inventory"/>
 
     </form>
    )
