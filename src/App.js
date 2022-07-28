@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import About from './About';
 import Home from './Home';
 import Products from './Products';
@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
 function App() {
+  
   return (
     <>
     <Navbar/>
