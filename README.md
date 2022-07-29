@@ -10,13 +10,13 @@ An application meant to help business owners keep track of their stock easily by
 ## Project Set Up Instructions
 CTRL+ALT+T to open the terminal
 
-Now git clone:
+Now git clone:git@github.com:danmaraba/stocktaker.git
 
 cd stocktaker
 Use vscode to open it
 
 ## live link
-https://danmaraba.github.io/stocktaker/
+https://jocular-croquembouche-6600be.netlify.app/
 
 ## Technologies Used
 REACT
