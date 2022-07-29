@@ -16,6 +16,7 @@ cd stocktaker
 Use vscode to open it
 
 ## live link
+https://danmaraba.github.io/stocktaker/
 
 ## Technologies Used
 REACT
