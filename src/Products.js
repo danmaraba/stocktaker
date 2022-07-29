@@ -2,6 +2,7 @@ import React, {useEffect,useState}from 'react';
 import InventoriesList from './InventoriesList';
 import NewInventoryForm from './NewInventoryForm';
 
+
 function Products() {
   const [inventories,setInventories]=useState([]);
   // console.log(inventories)
@@ -26,7 +27,7 @@ function Products() {
   }
   return (
     <>
-    <NewInventoryForm onAddInventory={onAddInventory}/>
+    <NewInventoryForm onAddInventory={onAddInventory} inventories={inventories}/>
     <InventoriesList inventories={inventories} onDeleteInventory={handleDeleteInventory}/>,
      </>
   )
