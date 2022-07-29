@@ -36,10 +36,11 @@ body{
 
 .nav li:active{
   background-color: blue;
+  
 }
 
 .nav li:hover{
-  background-color: red;
+  background-color:blue;
 }
 
 .new-inventory-form{
@@ -62,6 +63,7 @@ body{
 }
 
 .inventories{
+  box-sizing: border-box;
   border-radius: 0.5rem;
   border: grey solid 0.1rem;
   padding: 0 1rem;
@@ -78,6 +80,7 @@ body{
   height: 2%;
   background-color:red;
   margin-top: 2%;
+  
 
 }
 

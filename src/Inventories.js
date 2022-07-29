@@ -14,9 +14,9 @@ function Inventories({inventory,onDeleteInventory}) {
 }
   return (
     <div className='inventories'>
-      <h3>{name}</h3>
-      <h3>{price}</h3>
-      <h3>{category}</h3>
+      <p>{name}</p>
+      <p>{price}</p>
+      <p>{category}</p>
       <button className='delete'onClick={handleDeleteonClick}>Delete</button>
         
     </div>
