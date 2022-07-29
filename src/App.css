@@ -57,7 +57,8 @@ body{
 }
 
 .name{
-  margin: 3%;
+  margin:2%;
+  width:2%;
 }
 
 .inventories{
@@ -82,6 +83,11 @@ body{
 
 .price{
   height:2%;
+  
+}
+
+.categoryelement{
+  margin:2%;
   
 }
 

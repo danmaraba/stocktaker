@@ -38,8 +38,11 @@ function NewInventoryForm({onAddInventory}) {
       <label>
         <input  placeholder='Price'name="price" onChange={handleChange} value={formData.price}/>
       </label>
-      <label>
+      <label className='categoryelement'>
       <input  placeholder='Category'name="category" onChange={handleChange} value={formData.category}/>
+      </label>
+      <label>
+        <input  placeholder='Search'name="search" onChange={handleChange} />
       </label>
       <input className='add-inventory' type="submit" onSubmit={handleSubmit} value="Add Inventory"/>
 
