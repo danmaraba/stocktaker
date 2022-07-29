@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  background-color: burlywood;
 }
 
 .nav{
@@ -42,7 +43,7 @@ body{
 }
 
 .new-inventory-form{
-  padding: 10%;
+  padding: 1%;
   margin-left: 10%;
 }
 
@@ -59,8 +60,28 @@ body{
   margin: 3%;
 }
 
-.name-inventory{
-  margin-left: 20%;
-  background-color: red;
+.inventories{
+  border-radius: 0.5rem;
+  border: grey solid 0.1rem;
+  padding: 0 1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  width:60%;
+  margin-left: 14%;
+  gap:20%
+
+}
+
+.delete{
+  height: 2%;
+  background-color:red;
+  margin-top: 2%;
+
+}
+
+.price{
+  height:2%;
+  
 }
 

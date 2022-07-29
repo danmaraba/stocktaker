@@ -12,11 +12,22 @@ function Products() {
     .then(res=>res.json())
     .then(data=>setInventories(data))
   },[]);
+
+  function onAddInventory(newInventory) {
+    setInventories([...inventories,newInventory])
+    
+  }
+
+  function handleDeleteInventory(id) {
+    const newInventoryList=inventories.filter((inventory)=>inventory.id!==id)
+    setInventories(newInventoryList)
+    
+    
+  }
   return (
     <>
-    <NewInventoryForm />
-    <InventoriesList inventories={inventories}/>,
-     
+    <NewInventoryForm onAddInventory={onAddInventory}/>
+    <InventoriesList inventories={inventories} onDeleteInventory={handleDeleteInventory}/>,
      </>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Inventories from './Inventories';
 
-function InventoriesList({inventories}) {
+function InventoriesList({inventories,onDeleteInventory}) {
   console.log(inventories)
   
     
@@ -10,7 +10,7 @@ function InventoriesList({inventories}) {
       
       {inventories.map((inventory)=>{
     return(
-      <Inventories key={inventory.id} inventory={inventory} />
+      <Inventories key={inventory.id} inventory={inventory} onDeleteInventory={onDeleteInventory} />
     )
   })}
        

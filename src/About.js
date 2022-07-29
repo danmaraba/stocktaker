@@ -3,7 +3,7 @@ import React from 'react'
 function About() {
   return (
     <div>
-        AA
+        An Application dedicated to solving your stock problems!
     </div>
   )
 }
