@@ -10,22 +10,22 @@ function NewInventoryForm({onAddInventory}) {
     setFormData({...formData,[e.target.name]: e.target.value})
   }
 
-  // function handleSubmit(e) {
-  //   e.preventDefault();
-  //   fetch ('https://nameless-retreat-54870.herokuapp.com/inventories',{
-  //   method: "POST",
-  //   headers: {
-  //     "Content-Type" : "application/json"
-  //   },
-  //   body: JSON.stringify({name:formData.name, price:formData.price, category:formData.category})
+  function handleSubmit(e) {
+    e.preventDefault();
+    fetch ('https://nameless-retreat-54870.herokuapp.com/inventories',{
+    method: "POST",
+    headers: {
+      "Content-Type" : "application/json"
+    },
+    body: JSON.stringify({name:formData.name, price:formData.price, category:formData.category})
     
-  // })
-  //  .then(res=>res.json())
-  //  .then((data)=>{
-  //   onAddInventory(data) 
-  //   setFormData({...formData,name:"",price:"",category:""})
-  //  })
-  // }
+  })
+   .then(res=>res.json())
+   .then((data)=>{
+    onAddInventory(data) 
+    setFormData({...formData,name:"",price:"",category:""})
+   })
+  }
 
 //   return (
     
