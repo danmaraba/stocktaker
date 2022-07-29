@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home() {
   return (
-    <div>
+    <div className='home'>
       Welcome to StockTaker, home of your stock solutions!
     </div>
   )
